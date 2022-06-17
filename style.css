@@ -1,0 +1,84 @@
+body {
+	background:  #1c1c1c;
+	color:  #eee;
+	font-family: 'Roboto', cursive;
+}
+header {
+	text-align: center;
+	margin-bottom: 2.2rem;
+}
+header h1 {
+	color: #35E1B7;
+	font-family: 'Poppins', cursive;
+	letter-spacing: 1.6;	
+}
+.box-followers {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	padding:  1.4rem 1.2rem;
+}
+.avatar_url {
+	width: 150px;
+	height: 150px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 5px;	
+}
+.follower {
+	display: flex;
+	flex: 1;
+    flex-flow: column wrap;
+    align-items: center;
+    max-width: 333px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px 1px #eee;
+    border: 1px solid black;
+    padding: 1rem 1.45rem;
+    background: #262626;
+    color: greenyellow;
+}
+.info-follower {  
+	text-align: left;
+}
+.info-follower a {
+	padding-left: 12px;
+	color: aqua;
+}
+form {
+	display:  flex;
+	flex-flow: row wrap;
+	gap: 1rem;
+	justify-content: center;
+	margin-bottom: 2.2rem;
+}
+form .input-field {
+	width: 70%;
+}
+form .input-field input {
+	width: 100%;
+	padding: 0.75rem;
+	letter-spacing: 1.4;
+	font-size: 1rem;
+	font-weight: 600;
+}
+form .input-field input::placeholder {
+	letter-spacing: 1.4;
+	font-size: 1rem;
+	font-weight: bold;
+}
+form button {
+	cursor:  pointer; 
+	border:  none;
+	background: transparent;
+	border: 2px solid greenyellow;
+	border-radius: 2px;
+	width: 10%;
+	font-size:  1.4rem;
+}
+form button:hover {
+	opacity:  0.5;
+	transition: opacity 0.45s linear;
+}
