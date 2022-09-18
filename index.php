@@ -1,5 +1,3 @@
-<?php require('./api.php') ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,12 +10,12 @@
 
 <body>
 	<header>
-		<h1>Silver Waffle</h1>
+		<h1>Silver Waffle 🧇</h1>
 		<h2>meet your followers 🎈</h2>
 	</header>
 
 
-	<form method="GET">
+	<form method="GET" >
 		<div class="input-field">
 			<input type="search" name="searchUser" id="searchUser" placeholder="Digite o usuario..." />
 		</div>
@@ -29,18 +27,7 @@
 	<?php endif; ?>
 
 	<section class="box-followers">
-		<?php foreach($json as $follower): ?>
-			<div class="follower">
-				<div 
-					class="avatar_url" 
-					style="background-image: url('<?php echo $follower->avatar_url; ?>)'">
-				</div>
-				<div class="info-follower">
-					<h3><?php echo $follower->login; ?></h3>
-					<a href="<?php echo $follower->html_url; ?>"><?php echo $follower->html_url; ?></a>
-				</div>
-			</div>
-		<?php endforeach; ?>
+		<?php include('./api.php') ?>		
 	</section>
 </body>
 
