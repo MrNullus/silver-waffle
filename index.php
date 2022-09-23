@@ -15,7 +15,7 @@
 	</header>
 
 
-	<form method="GET" >
+	<form method="GET" >	
 		<div class="input-field">
 			<input type="search" name="searchUser" id="searchUser" placeholder="Digite o usuario..." />
 		</div>
